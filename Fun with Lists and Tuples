@@ -3,10 +3,10 @@ list1 = []
 list2 =[]
 
 for x, y in Sample_List:
-    list1.append((z,y,x))
+    list1.append((y,x))
 list1.sort()
 
 for a,b in list1:
-    list2.append((c,b,a))
+    list2.append((b,a))
 print(list2)
     
