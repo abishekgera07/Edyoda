@@ -1,0 +1,6 @@
+a = [8,2,3,0,7]
+z = 0
+for i in a:
+    sum1 = i +z
+    z = sum1
+print(sum1)
