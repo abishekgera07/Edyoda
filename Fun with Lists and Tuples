@@ -1,5 +1,12 @@
-list1 =  [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+Sample_List = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+list1 = []
+list2 =[]
 
-list1.sort(key = lambda x: x[-1])
+for x, y in Sample_List:
+    list1.append((z,y,x))
+list1.sort()
 
-print(str(list1))
+for a,b in list1:
+    list2.append((c,b,a))
+print(list2)
+    
