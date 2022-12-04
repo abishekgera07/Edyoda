@@ -1,0 +1,5 @@
+list1 = [4, 5, 2, 9]
+def myFun(x):
+    return x**2
+z = list(map(myFun,list1))
+print(z)
