@@ -1,2 +1,2 @@
 fun1 = lambda x: print(x+25)
-fun1(10)
+print(fun1(int(input("Enter your number: "))))
