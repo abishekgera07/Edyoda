@@ -1,0 +1,72 @@
+import json
+
+emp = [
+    {
+        "Nam" : "Abishek",
+        "DOB" : "23 Jan 1998",
+        "Height" : "180 cm",
+        "City" : "Zirakpur",
+        "State" : "Punjab"
+    },
+    {
+        "Nam" : "Aditya",
+        "DOB" : "5 Sept 2000",
+        "Height" : "168 cm",
+        "City" : "Shimla",
+        "State" : "Himachal"
+    },
+    {
+        "Nam" : "Mayank",
+        "DOB" : "24 Dec 2002",
+        "Height" : "170 cm",
+        "City" : "Zirakpur",
+        "State" : "Punjab"
+    },
+    {
+        "Nam" : "Rishabh",
+        "DOB" : "07 Dec 1998",
+        "Height" : "176 cm",
+        "City" : "Chandigarh",
+        "State" : "Chandigarh"
+    },
+    {
+        "Nam" : "Romil",
+        "DOB" : "5 Mar 1998",
+        "Height" : "177 cm",
+        "City" : "Chandigarh",
+        "State" : "Chandigarh"
+    }
+    
+]
+with open("employee.json", "w") as file:
+    json.dump(emp, file)
+
+
+class Employee:
+    def __init__(self, name, dob, height, city, state):
+        self.name = name
+        self.dob = dob
+        self.height = height
+        self.city = city
+        self.state = state
+    
+    def __str__(self):
+        return f"Name: {self.name}, DOB: {self.dob}, Height: {self.height}, City: {self.city}, State: {self.state}"
+
+
+with open('employee.json', 'r') as f:
+    data = json.load(f)
+
+
+employees = []
+for employee in data:
+    name = employee['Nam']
+    dob = employee['DOB']
+    height = employee['Height']
+    city = employee['City']
+    state = employee['State']
+    employees.append(Employee(name, dob, height, city, state))
+
+
+for i in employees:
+    print(i)
