@@ -1,0 +1,38 @@
+[
+    {
+        "Nam" : "Abishek",
+        "DOB" : "23 Jan 1998",
+        "Height" : "180 cm",
+        "City" : "Zirakpur",
+        "State" : "Punjab"
+    },
+    {
+        "Nam" : "Aditya",
+        "DOB" : "5 Sept 2000",
+        "Height" : "168 cm",
+        "City" : "Shimla",
+        "State" : "Himachal"
+    },
+    {
+        "Nam" : "Mayank",
+        "DOB" : "24 Dec 2002",
+        "Height" : "170 cm",
+        "City" : "Zirakpur",
+        "State" : "Punjab"
+    },
+    {
+        "Nam" : "Rishabh",
+        "DOB" : "07 Dec 1998",
+        "Height" : "176 cm",
+        "City" : "Chandigarh",
+        "State" : "Chandigarh"
+    },
+    {
+        "Nam" : "Romil",
+        "DOB" : "5 Mar 1998",
+        "Height" : "177 cm",
+        "City" : "Chandigarh",
+        "State" : "Chandigarh"
+    }
+    
+]
