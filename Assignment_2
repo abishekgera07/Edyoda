@@ -1,0 +1,47 @@
+class Dog:
+    def __init__(self,name,age,coat_color):
+        self.name = name
+        self.age = age
+        self.coat_color = coat_color
+    
+    def description(self):
+        return "The name of the dog is {}, and the age is {}".format(self.name,self.age)
+    def get_info(self):
+        return "The coat color of dog is {}".format(self.coat_color)
+
+class JackRussellTerrier(Dog):
+    def __init__(self,name,age,coat_color,nature1,owner1):
+        super().__init__(name,age,coat_color)
+        self.nature1 = nature1
+        self.owner1 = owner1
+    
+    def dog2(self):
+        return "The nature of the dog is {} the name is {} and the age is {}.".format(self.nature1,self.name,self.age)
+    
+    def Master1(self):
+        return "The Master name of the dog is {}.".format(self.owner1)
+        
+
+class Bulldog(Dog):
+    def __init__(self, name, age, coat_color,nature2,owner2):
+        super().__init__(name, age, coat_color)
+        self.nature2 = nature2
+        self.owner2 = owner2
+    
+    def dog3(self):
+        return "The nature of the dog is {} the name is {} and the age is {}.".format(self.nature2,self.name,self.age)
+    
+    def Master2(self):
+        return "The Master name of the dog is {}.".format(self.owner2)
+    
+D1 = Dog("Tommy",10,"gold")
+print(D1.description())
+print(D1.get_info())
+
+D2 = JackRussellTerrier("Liza",13,"Light Brown","Calm","Bob")
+print(D2.dog2())
+print(D2.Master1())
+
+D3 = Bulldog("Jackie",14,"White","Aggresive","Sarah")
+print(D3.dog3())
+print(D3.Master2())
