@@ -1,0 +1,16 @@
+import json
+
+States = {
+    "Punjab": "Chandigarh",
+    "Tamil Nadu": "Chennai",
+    "Himachal Pradesh": "Shimla",
+    "Goa":"Panaji",
+    "Jammu & Kashmir": "Srinagar",
+    "Uttar Pradesh":"Lucknow",
+    "Maharashtra" : "Mumbai"
+}
+
+
+with open(r"states.json", "w") as json1:
+
+    json.dump(States, json1)
