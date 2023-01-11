@@ -1,0 +1,141 @@
+Q1. Name four of the main data types in Python.
+
+Numbers, strings, lists, dictionaries, tuples, files, and sets are generally considered the main types of data. 
+Types, None, and Booleans are sometimes also classified this way. The integer, floating-point, complex, fraction 
+and decimal are numerical data types and simple strings and Unicode strings in Python 2 and text strings and byte 
+strings in Python 3 are the types of string data types.
+
+
+Q2. What does immutable mean and what three types of Python core data types are considered immutable?
+
+An immutable data type is a type of object which cannot be modified after its creation. Numbers, strings, and tuples 
+in Python fall into this category. Although you cannot modify an immutable object in place, you can always create a new one 
+by running an expression.
+
+
+Q3. What does sequence data type mean and which three types of data fall into this category?
+
+A sequence data type is a collection of objects ordered by a specific position. In Python, Strings, lists, and tuples are the 
+data types based on sequences. The Sequences share common sequence operations, such as indexing, concatenation, and slicing,
+but also have type-specific method calls.
+
+
+Q4. What does mapping mean and what kind of data type is based on mapping?
+
+The term mapping refers to an object that maps keys to associated values. The Python dictionary is the only type of mapping
+in the base typeset. Mappings do not maintain any left-to-right position order; they support access to stored data by key, 
+as well as type-specific method calls.
+
+
+Q5. What are decorators in Python?
+
+Decorators are used to add some design patterns to a function without changing its structure. Decorators generally are
+defined before the function they are enhancing. To apply a decorator we first define the decorator function. Then we write 
+the function it is applied to and simply add the decorator function above the function it has to be applied to. For this,
+we use the @ symbol before the decorator.
+
+
+Q6. What is slicing in Python?
+
+Slicing is used to access parts of sequences like lists, tuples, and strings. The syntax of slicing is-[start:end:step].
+The step can be omitted as well. When we write [start:end] this returns all the elements of the sequence from the start 
+(inclusive) till the end-1 element. If the start or end element is negative i, it means the ith element from the end. 
+The step indicates the jump or how many elements have to be skipped
+
+
+Q7. What are Keywords in Python?
+
+Keywords in python are reserved words that have special meaning.They are generally used to define type of variables. 
+Keywords cannot be used for variable or function names. There are following 33 keywords in python-
+And, Or, Not, If, Elif ,Else,For and many more.
+
+
+Q8. What is the difference between Python Arrays and lists?
+
+Arrays and lists, in Python, have the same way of storing data. But, arrays can hold only a single data type elements whereas 
+lists can hold any data type elements.
+
+
+Q9. What are functions in Python?
+
+A function is a block of code which is executed only when it is called. To define a Python function, the def keyword is used.
+
+
+Q10. What is __init__?
+
+__init__ is a method or constructor in Python. This method is automatically called to allocate memory when a new object/ instance 
+of a class is created. All classes have the __init__ method.
+
+
+Q11. What is a lambda function?
+
+An anonymous function is known as a lambda function. This function can have any number of parameters but, can have just one statement.
+Example:
+a = lambda x,y : x+y
+print(a(5, 6))
+
+
+Q12. What is self in Python?
+
+Self is an instance or an object of a class. In Python, this is explicitly included as the first parameter. However, this is not the 
+case in Java where it’s optional. It helps to differentiate between the methods and attributes of a class with local variables.
+The self variable in the init method refers to the newly created object while in other methods, it refers to the object whose method was called.
+
+Q13. How does break, continue and pass work?
+
+Break	- Allows loop termination when some condition is met and the control is transferred to the next statement.
+Continue -	Allows skipping some part of a loop when some specific condition is met and the control is transferred to the beginning of the loop
+Pass - Used when you need some block of code syntactically, but you want to skip its execution. This is basically a null operation. Nothing 
+happens when this is executed.
+
+
+Q14. How do you write comments in python?
+
+Comments in Python start with a # character. However, alternatively at times, commenting is done using docstrings
+(strings enclosed within triple quotes).
+
+
+Q15. What is a dictionary in Python?
+
+The built-in datatypes in Python is called dictionary. It defines one-to-one relationship between keys and values. 
+Dictionaries contain pair of keys and their corresponding values. Dictionaries are indexed by keys.
+Eg: dict={'Country':'India','Capital':'Delhi','PM':'Modi'}
+
+
+Q16. What does this mean: *args, **kwargs? And why would we use it?
+
+We use *args when we aren’t sure how many arguments are going to be passed to a function, or if we want to pass a 
+stored list or tuple of arguments to a function. **kwargs is used when we don’t know how many keyword arguments will 
+be passed to a function, or it can be used to pass the values of a dictionary as keyword arguments.
+
+
+Q17. What is the difference between list and tuples in Python?
+
+Lists are mutable i.e they can be edited.	Tuples are immutable (tuples are lists which can’t be edited).
+Lists are slower than tuples.	Tuples are faster than list.
+Syntax: list_1 = [10, ‘Chelsea’, 20]	Syntax: tup_1 = (10, ‘Chelsea’ , 20)
+
+
+Q18.  What is namespace in Python?
+
+A namespace is a naming system used to make sure that names are unique to avoid naming conflicts.
+
+
+Q19. What are python modules? Name some commonly used built-in modules in Python?
+
+Python modules are files containing Python code. This code can either be functions classes or variables. 
+A Python module is a .py file containing executable code.Some of the commonly used built-in modules are:
+os
+sys
+math
+random
+data time
+JSON
+
+
+Q20. What are local variables and global variables in Python?
+
+Global Variables:
+Variables declared outside a function or in global space are called global variables. These variables can be accessed by any function in the program.
+Local Variables:
+Any variable declared inside a function is known as a local variable. This variable is present in the local space and not in the global space.
