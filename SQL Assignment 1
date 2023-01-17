@@ -53,4 +53,4 @@ foreign key (Snum) references SalesPeople(Snum)
 
 /* 5. Display the number of orders taken by each Salesperson and their date of orders. */
 
--- select s.Sname as SalesPerson, Onum as OrderNumber, o.Odate as date from SalesPeople as s inner join Orders as o on s.Snum = o.Snum; 
+-- SELECT Sname, COUNT(Onum) as 'Number of Orders', GROUP_CONCAT(DISTINCT Odate) as 'Dates of Orders' FROM SalesPeople JOIN Orders ON SalesPeople.Snum = Orders.Snum GROUP BY Sname;
